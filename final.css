@@ -1,0 +1,94 @@
+body {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    background-color:  #87A6C7;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-family: "微軟正黑體", sans-serif;
+}
+
+
+h2 {
+    margin: 0;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+h2::after {/*在這句文字結束後加一個裝飾用藍色長條*/
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 8px;
+    background-color: #4F6087;
+    margin-left: 10px;
+}
+
+h4 {
+    margin: 0;
+    margin-top: 40px;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+
+hr {/*美麗的藍色水平標線*/
+    border: none;
+    border-bottom: solid 4px #4F6087;
+    width: 40%;
+    margin-left: 0;
+}
+
+.resume {/*整個頁面的大白色外框*/
+    display: flex;/*彈性變動的大小*/
+    max-width: 950px;/*最大彈性寬度*/
+    border: solid 8px white; /*白色外框*/
+    padding: 50px; /*padding:邊距*/
+    position: relative;
+}
+
+.left {/*定義左邊區塊位置並且增加一條美麗藍色右邊邊界*/
+    padding-right: 50px;
+  
+    border-right: solid 3px #4F6087;
+}
+.leftphoto {/*定義照片區塊位置*/
+    padding-right: 50px;
+  
+    
+}
+
+.right {/*定義右邊區塊位置*/
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.leftphoto,/*定義他們的彈性*/
+.left {
+    flex: 5
+}
+
+.right {/*定義他的彈性*/
+    flex: 7
+}
+.leftphoto,
+.left,
+.right {
+    padding: 15px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
